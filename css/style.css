@@ -1,0 +1,367 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans","Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: lightgray
+}
+
+.container{
+  background-color: white;
+  width: 1140px;
+  height: 3000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.site-nav{
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+}
+.site-link{
+  margin-right: 325px;
+}
+.dokument{
+  vertical-align: middle;
+  width: 59px;
+  height: 20px;
+}
+.nav-list{
+  display: flex;
+  margin: 0;
+  margin-right: 8px;
+  padding: 0;
+  list-style-type: none;
+}
+.nav-link{
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+}
+.nav-link:hover .dropdown-menu{
+  display: block;
+}
+.nav-link::after{
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: transparent;
+  content: "";
+}
+.nav-link:hover::after{
+  background-color: #191919;
+
+}
+.dropdown-menu{
+  display: none;
+  width: 124px;
+  align-items: flex-start;
+  padding: 8px 0px 0px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+}
+
+.dropdown-menu-link{
+  display: block;
+  text-decoration: none;
+  margin-top: 8px;
+  width: 124px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  padding: 8px 0 0 16px;
+  margin-top: 8px;
+
+}
+
+.dropdown-menu-link:hover{
+  color: #FFFFFF;
+  background-color: #00BAFC;
+}
+
+.phone-number{
+  white-space: nowrap;
+  text-decoration: none;
+  font-weight:bold;
+  font-size: 15px;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  background-color:#00BAFC;
+  border-radius: 5px;
+  border:3px solid transparent;
+}
+.phone-number:hover{
+  background: #FFFFFF;
+  border: 3px solid #00BAFC;
+  border-radius: 5px;
+  color: #00BAFC;
+
+
+}
+.promo{
+  display: flex;
+  justify-content: space-between;
+  padding: 97px 0 80px 0;
+}
+.promo-text-wrapper{
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+}
+.promo-heading{
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 130%;
+  color: #000000;
+}
+.promo-text{
+  font-size: 16px;
+  line-height: 24px;
+}
+.promo-button{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  border: none;
+  background-color:  #00BAFC;
+  border-radius: 5px;
+  padding: 8px 16px;
+  align-self: flex-start;
+}
+.promo-youtube{
+  width: 458px;
+  height: 258px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: none;
+}
+.services{
+ padding: 56px 0px 0px;
+}
+.services-heading{
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+  margin: 0;
+  margin-bottom: 16px;
+}
+.services-text{
+  width: 719px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 24px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.services-list{
+  display:flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+}
+.services-list-item{
+  margin-bottom: 45px;
+}
+.services-list-item + .services-list-item{
+  margin-left: 70px;
+}
+.services-list-item
+.services-link{
+  display: block;
+  padding: 24px 24px;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 320px;
+}
+.services-link::before{
+  display: inline-block;
+  width: 203px;
+  height: 130px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+}
+.website::before{
+  background-image: url("../img/website.png");
+}
+.bgi-bot::before{
+  background-image: url("../img/telegram.png");
+}
+.bgi-smm::before{
+  background-image: url("../img/smm.png");
+}
+.bgi-design::before{
+  background-image: url("../img/grafik.png");
+}
+.bgi-crm::before{
+  background-image: url("../img/SRM.png");
+}
+.services-inheading{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  margin: 0;
+}
+.services-intext{
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+.services-footer{
+   width: 354px;
+   display: flex;
+   align-items: center;
+}
+.services-button{
+  padding: 8px 16px;
+  background: #00BAFC;
+  border-radius: 5px;
+  color: #FFFFFF;
+  border: none;
+
+}
+.services-link{
+  font-size: 16px;
+  line-height: 24px;
+  color: #00BAFC;
+  /* padding: 8px 16px; */
+}
+
+.container-four{
+
+}
+
+.container-four-head{
+text-align: center;
+color: #000000;
+font-weight: bold;
+}
+
+.container-four-text{
+text-align: center;
+color: #000000;
+font-size: 16px;
+}
+.div-one{
+  width: 832px;
+  height: 277px;
+  display: flex;
+}
+
+.div-one-list{
+  text-decoration: none;
+  list-style-type: none;
+}
+.div-one-img{
+  width: 300px;
+  height: 277px;
+  padding-left: 100px;
+}
+.head-one{
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+
+}
+
+.text-one{
+  color: #000000;
+  font-size: 16px;
+}
+
+.service-button{
+  padding: 8px 16px;
+  background: #00BAFC;
+  border-radius: 5px;
+  color: #FFFFFF;
+  border: none;
+  align-items: center;
+}
+
+.div-blue{
+  width: 1140px;
+  height: 400px;
+  background-color: #00BAFC;e;
+}
+
+.div-blue-head{
+padding-top: 50px;
+font-weight: bold;
+font-size: 24px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.div-blue-text{
+text-align: center;
+color: #FFFFFF;
+font-size: 16px;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) 
